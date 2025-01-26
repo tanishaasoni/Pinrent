@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('image/bg.webp') no-repeat center center fixed; 
+  background-color: #000; /* Set body background to black */
+  color: #fff;
+}
+
+/* Navbar */
+nav {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #fff;
+}
+
+nav .logo h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #f39c12;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #f39c12;  /* Yellow color for links */
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e67e22;
+}
+
+/* Home Section */
+#home {
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 80px;
+  border-radius: 15px;
+}
+
+#home .content {
+  padding: 40px;
+  background-color: rgba(10, 8, 8, 0.8); /* Slightly dark background for content */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#home h2 {
+  font-size: 40px;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+#home p {
+  font-size: 18px;
+  color: #77aadc;
+}
+
+/* Upload and Rent Sections */
+section {
+  padding: 50px 20px;
+  text-align: center;
+  background: rgba(21, 14, 14, 0.85);
+  margin-top: 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+/* Home Section Button with Border Box */
+#home button.rent, button.rent {
+  padding: 12px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: 2px solid #f39c12; /* Added border */
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+#home button.rent {
+  position: relative;
+  left: 0;
+  z-index: 1;
+}
+
+button.rent:hover {
+  background-color: #e67e22;
+  border-color: #e67e22; /* Change border color on hover */
+}
+
+/* Upload and Rent Sections Button with Border Box */
+section button.rent {
+  padding: 12px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: 2px solid #f39c12; /* Added border */
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+section button.rent:hover {
+  background-color: #e67e22;
+  border-color: #e67e22; /* Change border color on hover */
+}
+
+
+section h2 {
+  font-size: 36px;
+  color: #77aadc;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  padding: 12px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus {
+  border-color: #f39c12;
+  outline: none;
+}
+
+form button {
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e67e22;
+}
+
+/* Rent Clothes Button Fix */
+button.rent {
+  padding: 12px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+button.rent:hover {
+  background-color: #e67e22;
+}
+
+#home button.rent {
+  position: relative;
+  left: 0;
+  z-index: 1;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  form input {
+    width: 90%;
+  }
+
+  form button {
+    width: 90%;
+  }
+
+  #home button.rent {
+    width: 90%;
+    margin-top: 10px;
+  }
+}

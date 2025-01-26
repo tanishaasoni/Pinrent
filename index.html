@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinRent - Closet Sharing & Renting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <h1>PinRent</h1>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#upload">Upload Closet</a></li>
+            <li><a href="#rent">Rent Clothes  </a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="content">
+            <h2>Welcome to PinRent!</h2>
+            <p>Share your closet, get outfit ideas from Pinterest, and rent clothes locally.</p>
+        </div>
+    </section>
+
+    <!-- Upload Closet Section -->
+    <section id="upload">
+        <h2>Upload Your Closet</h2>
+        <form id="uploadForm">
+            <label for="clothes">Choose your clothes to upload:</label>
+            <input type="file" id="clothes" name="clothes" accept="image/*" multiple>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+
+    <!-- Rent Clothes Section -->
+    <section id="rent">
+        <h2>List Clothes for Rent</h2>
+        <form id="rentForm">
+            <label for="clothing-item">Clothing Item:</label>
+            <input type="text" id="clothing-item" name="clothing-item" required>
+            <label for="price">Rent Price:</label>
+            <input type="number" id="price" name="price" required>
+            <button type="submit">List for Rent</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PinRent | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
